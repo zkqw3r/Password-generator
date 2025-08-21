@@ -38,6 +38,18 @@ pip install -r requirements.txt
 python parolkin.py
 ```
 
+## ❗Warning❗
+### On Linux you may have the error: ModuleNotFoundError: No module named 'tkinter'
+### even after installing all dependencies, in which case:
+### For Ubuntu or other distros with Apt:
+```bash
+sudo apt-get install python3-tk
+```
+### For Fedora:
+```bash
+sudo dnf install python3-tkinter
+```
+
 ## 🎨 Themes
 ### The application supports several color themes to choose from:
  
