@@ -11,94 +11,94 @@
   *Minimalistic Strong Password Generator*
 </div>
 
-## ✨ Особенности
+## ✨ Features
 
-- 🔒 **Безопасная генерация** паролей через алгоритм Фишера-Йетса
-- 🎚️ **Настройка параметров** генерации (длина, типы символов)
-- 🌙 **Поддержка тем** (Light/Dark)
-- 📦 **Готовый EXE** для Windows
+- 🔒 **Secure password generation** via the Fisher-Yates algorithm
+- 🎚️ **Configuring parameters** of generation (length, character types)
+- 🌙 **Support for themes** (Light/Dark)
+- 📦 **Ready EXE** for Windows
 
-## 🚀 Установка и запуск
+## 🚀 Installation and launch
 
-### Вариант 1: Готовый EXE (для Windows)
-1. Скачайте последний релиз из [Releases section](https://github.com/zkqw3r/Password-generator/releases)
-2. Разархивируйте папку
-3. Запустите `Parolkin.exe`
+### Option 1: Ready EXE (for Windows)
+1. Download the latest release from [Releases section](https://github.com/zkqw3r/Password-generator/releases)
+2. Unzip the folder
+3. Run `Parolkin.exe`
 
-### Вариант 2: Из исходного кода
+### Option 2: From source
 ```bash
-# Клонируйте репозиторий
+# Clone the repository
 git clone https://github.com/zkqw3r/Password-generator.git
 cd password-keeper
 
-# Установите зависимости
+# Install dependencies
 pip install -r requirements.txt
 
-# Запустите приложение
+# Run the application
 python parolkin.py
 ```
 
-## 🎨 Темы оформления
-### Приложение поддерживает несколько цветовых тем на выбор:
+## 🎨 Themes
+### The application supports several color themes to choose from:
  
 <div align="center">
-  <h1>Стандартные темы</h1>
+  <h1>Standard Themes</h1>
   <img src="examples\greene_color.png" width="500" alt="Pogodkin Preview">
 
-  *Green 🟢 - свежая зеленая тема*
+  *Green 🟢 - fresh green theme*
 </div>
 
 <div align="center">
   <img src="examples\blue_color.png" width="500" alt="Pogodkin Preview">
 
-  *Blue 🔵 - классическая синяя тема*
+  *Blue 🔵 - classic blue theme*
 </div>
 
 <div align="center">
-  <h1>Кастомная тема</h1>
+  <h1>Custom theme</h1>
   <img src="examples\dark_theme.jpg" width="500" alt="Pogodkin Preview">
 
-  *Purple 🟣 - тема сделанная мной, используются фиолетовые цвета*
+  *Purple 🟣 - theme made by me, purple colors used*
 </div>
 
-### Смена цветовой темы:
-#### Для смены цветовой темы нужно изменить строку в Parolkin.py
+### Changing the color theme:
+#### To change the color theme, you need to change the line in Parolkin.py
 ```bash
 CTK.set_default_color_theme("purple.json") # "blue" or "green" or "custom/theme/path.json"
 ```
 
-## 🎮 Использование
-- Выберите параметры генерации:
-- - Длина пароля (12-100 символов)
-- - Типы символов (цифры, буквы, спецсимволы)
-- Нажмите "Generate" для создания пароля
-- Скопируйте пароль
-- Используйте пароль в нужном сервисе
+## 🎮 Usage
+- Select generation options:
+- - Password length (12-100 characters)
+- - Character types (numbers, letters, special characters)
+- Click "Generate" to create a password
+- Copy the password
+- Use the password in the desired service
 
-## 🛡️ Безопасность
-- Module *secrets* для криптографически безопасной генерации
-- Алгоритм Фишера-Йетса для равномерного распределения символов
+## 🛡️ Security
+- Module *secrets* for cryptographically secure generation
+- Fisher-Yates algorithm for uniform distribution of characters
 
-#### Никакого сохранения паролей - только генерация и копирование
+#### No password saving - only generation and copying
 
-### Зависимости
-- customtkinter - современный GUI
+### Dependencies
+- customtkinter - modern GUI
 
-- Pillow - работа с изображениями
+- Pillow - image manipulation
 
-- secrets - безопасная генерация (встроен в Python)
+- secrets - safe generation (built into Python)
 
-## 🛠️ Компиляция в EXE
-### Если хотите собрать EXE самостоятельно:
+## 🛠️ Compilation to EXE
+### If you want to build the EXE yourself:
 
-#### Установите зависимости
+#### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Скомпилируйте в EXE
+#### Compile to EXE
 ```bash
 pyinstaller -F -w Parolkin.py
 ```
 
-#### Теперь у вас есть готовое приложение! 🚀
+#### Now you have a ready-made application! 🚀
