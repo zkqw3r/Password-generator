@@ -12,7 +12,7 @@ class App(CTK.CTk):
         self.geometry("800x600")
         self.title("PAROLKIN")
         self.resizable(False, False)
-        CTK.set_default_color_theme("blue")
+        CTK.set_default_color_theme("purple.json")
 
         # Header
         self.logo = CTK.CTkImage(dark_image=Image.open("dark_logo.png"), size=(500, 200))
@@ -156,4 +156,5 @@ class App(CTK.CTk):
 if __name__=="__main__":
 
     app = App()
+
     app.mainloop()
