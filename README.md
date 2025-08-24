@@ -29,7 +29,7 @@
 ```bash
 # Clone the repository
 git clone https://github.com/zkqw3r/Password-generator.git
-cd password-keeper
+cd password-generator
 
 # Install dependencies
 pip install -r requirements.txt
@@ -114,3 +114,4 @@ pyinstaller -F -w Parolkin.py
 ```
 
 #### Now you have a ready-made application! 🚀
+
